@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign In Now</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" type="images/x-icon" href="images/favicon.png">
+<style>
+body {font-family: Arial, Helvetica, sans-serif; background-image: url(images/gradient.jpg); background-repeat: no-repeat; width: 100%}
+* {
+  box-sizing: border-box;
+  text-align: center;  
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  margin: 5px 0 10px 0;
+  width: 30%;
+  border-radius: 20px;
+}
+
+/* Add padding to container elements */
+.container {
+  width: 50%;
+  margin: auto;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: rgba(0,0,0,0.5);
+}
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(38,58,57);
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #324A4E;
+  margin: 5% auto 10% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .container{
+    width: 90%;
+  }
+}
+
+.col .input{
+  width: 80%;
+  border-radius: 20px;
+}
+
+.col a{
+  text-decoration: none;
+  color: white;
+}
+
+.login{
+  margin-bottom: 10px; 
+  border: 1px solid black; 
+  border-radius: 18px; 
+  padding: 10px 30px 10px 30px;
+  background-color: rgb(38,58,57);
+  color: white;
+}
+
+.login:hover{
+  background-color: white;
+  color: #243B41;
+}
+
+.label{
+  color: white;
+}
+
+.fa{
+  width: 40px;
+  height: 40px;
+  color: white;
+  background-color: #243B41;
+  border-radius: 50px;
+  text-align: center;
+  line-height: 40px;
+}
+
+.fa:hover{
+  background-color: white;
+  color: #243B41;
+}
+</style>
+</head>
+<body>
+
+  <div class="container">
+  <form action="/action_page.php">
+    <div class="row">
+      <h2 style="text-align:center; color:white;">Login with Social Media or Manually</h2>
+
+      <div class="col">
+        <a href="https://www.facebook.com" class="fb btn">
+          <i class="fa fa-facebook fa-fw"></i> Login with Facebook</a>
+        <a href="https://www.twitter.com" class="twitter btn">
+          <i class="fa fa-twitter fa-fw"></i> Login with Twitter</a>
+        <a href="https://www.gmail.com" class="google btn">
+          <i class="fa fa-google fa-fw"></i> Login with Google+</a>
+      </div>
+
+      <div class="col">
+        <div class="hide-md-lg">
+          <p style="color:white;">Or sign in manually:</p>
+        </div>
+
+        <input type="text" name="username" placeholder="Username" required class="input"><br>
+        <input type="password" name="password" placeholder="Password" required class="input"><br>
+        <input type="submit" value="Login" class="login">
+      </div>
+      
+    </div>
+  </form>
+
+  <div class="bottom-container">
+  <div class="row">
+    <div class="col">
+      <button onclick="document.getElementById('id01').style.display='block'" style="width:auto; border-radius: 20px; background-color: black; color: white; padding: 15px 30px 15px 30px;">SignUp</button>
+    </div>
+    <div class="col">
+      <a href="#" style="color:white" class="btn">Forgot password?</a> <a href="index.html" style="text-decoration: none;
+  color: white; margin-left: 10px;">Go Back To Home Page</a>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1 class="label">Sign Up</h1>
+      <p class="label">Please fill in this form to create an account.</p>
+      <hr>
+      <label for="email" class="label"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw" class="label"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat" class="label"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+      <label class="label">
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p class="label">By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">SignUp</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+                                /**************************Navbar Start*******************/
+li{
+	display: inline-block;
+}
+
+.nav-item button{
+	margin-left: 10px;
+	margin-top: 15px;
+}
+                                  /**************************Navbar End*******************/
+
+                                   /**************************Carousal Start*******************/
+.carousel-item img{
+	height: 500px;
+} 
+                                   /**************************Carousal End*******************/
+
+                                   /**************************Services Start*******************/
+.intro p{
+	margin: 0 15% 0 15%;
+}
+.card-title{
+	color: black;
+}
+
+.card-body{
+	box-shadow: 3px 3px 3px 3px #DEDFE0;
+}
+
+.card img{
+	height: 250px;
+}
+
+.card-header h1{
+	color: white; 
+}
+
+                                   /**************************Services End*******************/
+
+                                     /***********************Footer Start***********************/
+.page-footer{
+	background-color: #25272E;
+}
+
+.list-unstyled,h5{
+	color: white;
+}
+
+.list-item li{
+	display: block;
+}
+
+.btn-rounded{
+	border-radius: 30px;
+	padding: 15px 40px 15px 40px;
+}
+
+.page-footer p{
+	color: #fff;
+}
+
+.footer-copyright{
+	color: white;
+}
+
+.list-inline-item a i{
+	width: 50px;
+	height: 50px;
+	color: white;
+	border-radius: 50px;
+	line-height: 50px;
+	size: 70px;
+}
+
+.fa-facebook-f{
+	background-color: #3B5998;
+}
+
+.fa-twitter{
+	background-color: #55ACEE;
+}
+
+.fa-google-plus-g{
+	background-color: #DD4B39;
+}
+
+.fa-linkedin-in{
+	background-color: #0082CA;
+}
+
+.fa-instagram{
+	background-color: #B631A1;
+}
+
+.fa-facebook-f:hover,.fa-twitter:hover,.fa-google-plus-g:hover,.fa-linkedin-in:hover,.fa-instagram:hover{
+	opacity: 0.5;
+}
+                        /***********************Footer End***********************/

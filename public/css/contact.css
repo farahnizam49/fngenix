@@ -1,0 +1,44 @@
+                                   /*********************Contact Us CSS Start************************/
+body {font-family: Arial, Helvetica, sans-serif; background-image: url(contact.jpg); background-repeat: no-repeat; }
+* {box-sizing: border-box;}
+
+h1{
+  text-align: center;
+  color: #fff;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.label{
+  color: #fff;
+}
+
+input[type=text], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.container {
+  width: 40%;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 600px){
+  .container{
+    width: 90%;
+  }
+}
+                                    /*********************Contact Us CSS End************************/

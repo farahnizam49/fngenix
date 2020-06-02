@@ -1,0 +1,48 @@
+/**************************Order Now Start*******************/
+body{
+	background: url(webdevelopment.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}
+
+.form-group h1{
+	text-align: center;
+	color: white;
+} 
+
+.form-group{
+	width: 40%;
+	border: 2px solid black;
+	border-radius: 20px;
+	margin: 30px auto 30px auto;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.form-control{
+	width: 80%;
+	margin: auto;
+}
+
+.label1{
+	margin-left: 60px;
+	color: #fff;
+}
+
+.custom-control-label{
+	color: #fff;
+}
+
+.custom-control{
+	margin: auto;
+}
+
+.btn-secondary{
+	margin: 10px 0 10px 0;
+}
+
+                                   /**************************Order Now End*******************/
